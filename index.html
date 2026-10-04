@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>xKnight – Free Action RPG in your browser</title>
+<meta name="description" content="xKnight is a free fast-paced action RPG. Fight 51 levels, 12 unique bosses, collect coins, unlock skins, swords and slash effects. Play instantly in your browser.">
+<meta property="og:title" content="xKnight – Free Action RPG"><meta property="og:description" content="51 levels, 12 bosses, skins, swords and slash effects. Play free in your browser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%94%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#0c0e1c;--pn:#1b2040;--gold:#ffc94a;--ice:#6fd8ff;--tx:#eef1ff;--mut:#aab2e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% -10%,#262d63,var(--bg) 60%);color:var(--tx);font-family:"Palatino Linotype",Palatino,Georgia,serif;line-height:1.6}
+.w{max-width:1000px;margin:auto;padding:0 20px}
+header{text-align:center;padding:64px 0 28px}
+h1{margin:0;font-size:clamp(3rem,12vw,6.5rem);letter-spacing:.04em;background:linear-gradient(#fff3b0,#ffb020 60%,#c25a00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{color:var(--mut);font-size:clamp(1rem,3vw,1.3rem);max-width:640px;margin:8px auto 26px}
+.btn{display:inline-block;font-weight:700;font-size:1.15rem;color:#1a1200;background:linear-gradient(#ffe27a,#ffb020);padding:14px 38px;border-radius:12px;text-decoration:none;box-shadow:0 6px 0 #a65f00;transition:transform .1s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #a65f00}
+.btn.sec{background:#2a3160;color:var(--tx);box-shadow:0 6px 0 #141838;margin-left:10px}
+.game{margin:34px auto 10px;border:3px solid #39428a;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px #000a;aspect-ratio:16/9;background:#000}
+.game iframe{width:100%;height:100%;border:0;display:block}
+.note{text-align:center;color:var(--mut);font-size:.95rem;margin:8px 0 40px}
+.note a{color:var(--ice)}
+h2{text-align:center;color:var(--gold);font-size:2rem;margin:50px 0 20px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.c{background:var(--pn);border:2px solid #39428a;border-radius:12px;padding:18px}
+.c b{color:var(--gold);display:block;font-size:1.15rem;margin-bottom:4px}.c span{color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:var(--pn);border-radius:12px;overflow:hidden}
+td{padding:10px 16px;border-bottom:1px solid #39428a}td:first-child{color:var(--gold);width:35%;font-weight:700}tr:last-child td{border:0}
+footer{text-align:center;color:var(--mut);padding:50px 0 40px;font-size:.9rem}
+</style></head><body>
+<header class="w">
+<h1>xKnight</h1>
+<p class="tag">A fast-paced action RPG. Slash through 51 levels, beat 12 unique bosses, collect coins and upgrade your knight. Free, in your browser.</p>
+<a class="btn" href="#play">Play now</a><a class="btn sec" href="game.html">Fullscreen</a>
+</header>
+<main class="w">
+<div class="game" id="play"><iframe src="game.html" title="xKnight game" allow="fullscreen; autoplay" loading="lazy"></iframe></div>
+<p class="note">Sound starts after your first click. On a phone, use the on-screen joystick, or tap <a href="game.html">Fullscreen</a> for the best view.</p>
+
+<h2>Features</h2>
+<div class="g">
+<div class="c"><b>51 levels</b><span>Ten worlds that get harder, ending in a final boss rush.</span></div>
+<div class="c"><b>12 unique bosses</b><span>Leaps, bone charges, lightning storms and bullet rings, each with its own look.</span></div>
+<div class="c"><b>Upgrades</b><span>Spend coins at the blacksmith on damage, hearts, speed, reach and attack speed.</span></div>
+<div class="c"><b>Armory</b><span>Unlock 8 skins, 12 swords and 6 slash effects as you climb.</span></div>
+<div class="c"><b>Medals</b><span>Earn achievement medals for completing level 50 and level 51.</span></div>
+<div class="c"><b>Checkpoints</b><span>Your progress saves in your browser after every level.</span></div>
+</div>
+
+<h2>Controls</h2>
+<table>
+<tr><td>Move</td><td>WASD or arrow keys</td></tr>
+<tr><td>Slash</td><td>Space, J or left-click</td></tr>
+<tr><td>Dash</td><td>Shift, K or right-click (brief invincibility)</td></tr>
+<tr><td>Pause / Music</td><td>P or Esc / M</td></tr>
+<tr><td>Touch</td><td>On-screen joystick, Slash and Dash buttons</td></tr>
+</table>
+<!-- To offer an Android download: upload xKnight.apk to this repo, then uncomment:
+<p style="text-align:center;margin-top:30px"><a class="btn" href="xKnight.apk" download>Download Android APK</a></p> -->
+</main>
+<footer>xKnight · made with HTML, CSS and JavaScript · no ads, no tracking</footer>
+</body></html>
